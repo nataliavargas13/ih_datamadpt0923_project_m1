@@ -59,6 +59,8 @@ get_min_distance(lat_origin, long_origin, bici_points): Finds the closest statio
     └── data
         ├── bicimad_stations.csv
         ├── bicipark_stations.csv
+    ├── bicimad_app.py	
+
 
 # Additional Notes
 
