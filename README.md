@@ -1,12 +1,12 @@
 # Project-Module-1: Madrid Embassy-Bike Stations Integration
 This Python script integrates information from Madrid's bike sharing stations (BiciMAD and BiciPark) and embassy/consulate locations in Madrid. The script determines the closest bike sharing stations (both BiciMAD and BiciPark) for each embassy/consulate based on their geographical coordinates.
 
-# Prerequisites
+⚠️  # Prerequisites
 Before running the script, ensure you have the required dependencies installed. You can install them using the following:
 
 pip install pandas geopandas requests
 
-# Usage
+🚀 # Usage
 1. Data Loading:
 
 df_bicimad = pd.read_csv('./data/bicimad_stations.csv', delimiter='\t')
@@ -44,7 +44,7 @@ Results are stored in df_embajadas, including embassy type, address, and the nea
 to_mercator(lat, long): Transforms latitude/longitude data in degrees to pseudo-mercator coordinates in meters.
 distance_meters(lat_start, long_start, lat_finish, long_finish): Returns the distance in meters between two latitude/longitude pairs.
 get_min_distance(lat_origin, long_origin, bici_points): Finds the closest station from a list of bike station coordinates.
-# Folder Structre
+📂  # Folder Structre
 └── project
     ├── __trash__
     ├── .gitignore
@@ -62,7 +62,7 @@ get_min_distance(lat_origin, long_origin, bici_points): Finds the closest statio
     ├── bicimad_app.py	
 
 
-# Additional Notes
+👀 # Additional Notes
 
 - Ensure the required data files (bicimad_stations.csv, bicipark_stations.csv) are present in the specified locations.
 - The script fetches embassy/consulate data from a Madrid open data portal URL, so an internet connection is required.
